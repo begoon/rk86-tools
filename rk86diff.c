@@ -46,6 +46,7 @@ void instr(unsigned char const* const code, int ofs) {
   
   int i;
   printf(" | ");
+  *cmd = 0;
   for (i = 0; i <= 2; ++i) {
     char const* const mark = ofs == -i ? "*" : "";
     printf("%s%02X%s", mark, code[ofs + i], mark);
