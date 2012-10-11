@@ -17,9 +17,9 @@ build:
 	$(CC) -o $(DISASM)$(EXE) rk86dis.c rk86fmt.c i8080dis.c
 
 install:
-	cp $(DIFF) $(HOME)/bin
-	cp $(FILE) $(HOME)/bin
-	cp $(DISASM) $(HOME)/bin
+	cp $(DIFF) $(HOME)/opt/bin
+	cp $(FILE) $(HOME)/opt/bin
+	cp $(DISASM) $(HOME)/opt/bin
 
 clean:
 	-rm $(DIFF)$(EXE) $(FILE)$(EXE) $(DISASM)$(EXE)
